@@ -1,8 +1,9 @@
-﻿Imports System.IO
+Imports System.IO
 Imports System.Text
 Imports AgentObjects
 
 Public Class Form1
+
     Private MyAgent As AgentObjects.Agent
     Private Character As AgentObjects.IAgentCtlCharacterEx
 
@@ -48,11 +49,7 @@ Public Class Form1
         Using ofd As New OpenFileDialog()
             ofd.Title = "Select a Microsoft Agent character"
             ofd.Filter = "Agent characters (*.acs;*.acf)|*.acs;*.acf|All files (*.*)|*.*"
-
-            If ofd.ShowDialog() <> DialogResult.OK Then
-                Return
-            End If
-
+            If ofd.ShowDialog() <> DialogResult.OK Then Return
             LoadCharacterAndFillTable(ofd.FileName)
         End Using
     End Sub
@@ -73,8 +70,14 @@ Public Class Form1
             Character = CType(MyAgent.Characters("Char"), AgentObjects.IAgentCtlCharacterEx)
 
             Dim fi As New FileInfo(filePath)
-            Dim sizeMB As Double = fi.Length / (1024.0 * 1024.0)
-            Dim sizeString As String = sizeMB.ToString("0.00") & " MB"
+            Dim sizeKB As Double = fi.Length / 1024.0
+            Dim sizeString As String
+            If sizeKB < 1025.0 Then
+                sizeString = Math.Round(sizeKB).ToString("0") & " KB"
+            Else
+                Dim sizeMB As Double = fi.Length / (1024.0 * 1024.0)
+                sizeString = sizeMB.ToString("0.00") & " MB"
+            End If
 
             Dim animCount As Integer = 0
             For Each anim As Object In Character.AnimationNames
@@ -86,7 +89,6 @@ Public Class Form1
 
             Dim ttsModeId As String = Character.TTSModeID
             Dim ttsVoice As String = ""
-
             If Not String.IsNullOrWhiteSpace(ttsModeId) Then
                 Dim mapped As String = Nothing
                 If TtsVoiceMap.TryGetValue(ttsModeId, mapped) Then
@@ -115,7 +117,7 @@ Public Class Form1
             RichTextBox1.Text = sb.ToString()
 
         Catch ex As Exception
-            MessageBox.Show("There appears to be an error with the character you loaded: " & ex.Message,
+            MessageBox.Show("Error loading character, please let Konnor know on his talk page about the error code: " & ex.Message,
                             "Agentpedia Table Creator",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error)
