@@ -1,0 +1,14 @@
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\bin\x86\Release\AgentpediaTableGenerator.exe
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\bin\x86\Release\AgentpediaTableGenerator.pdb
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\bin\x86\Release\AgentpediaTableGenerator.xml
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\Interop.AgentObjects.dll
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\Interop.AgentServerExtensions.dll
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\Interop.AgentServerObjects.dll
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\AgentpediaTableGenerator.vbproj.ResolveComReference.cache
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\AgentpediaTableGenerator.Form1.resources
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\AgentpediaTableGenerator.Resources.resources
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\AgentpediaTableGenerator.vbproj.GenerateResource.cache
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\AgentpediaTableGenerator.vbproj.CoreCompileInputs.cache
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\AgentpediaTableGenerator.exe
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\AgentpediaTableGenerator.xml
+C:\Users\Konnor88\source\repos\AgentpediaTableGenerator\AgentpediaTableGenerator\obj\x86\Release\AgentpediaTableGenerator.pdb
